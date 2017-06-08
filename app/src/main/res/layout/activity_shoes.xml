@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_shoes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lastshoes"
+    tools:context="com.example.admin.quizapp.ShoesActivity">
+    <include android:id="@+id/toobar"
+        layout="@layout/toolbar"
+        />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/tv2ScoreView" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn2Choice2"
+        android:onClick="on2Clicks"
+        android:layout_above="@+id/btn2Choice4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="22dp"
+        android:background="@color/colorButton" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn2Choice3"
+        android:layout_marginBottom="52dp"
+        android:onClick="on2Clicks"
+
+        android:layout_above="@+id/tv2ScoreView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorButton" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn2Choice4"
+        android:onClick="on2Clicks"
+        android:layout_above="@+id/btn2Choice3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorButton" />
+
+    <TextView
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv2Question"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/toobar"
+        android:layout_centerHorizontal="true" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pbShoe"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/toobar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn2Choice1"
+        android:onClick="on2Clicks"
+        android:layout_marginBottom="29dp"
+        android:layout_above="@+id/btn2Choice2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorButton" />
+
+
+</RelativeLayout>

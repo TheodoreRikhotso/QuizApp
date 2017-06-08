@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mains"
+    tools:context="com.example.admin.quizapp.MainActivity">
+    <include android:id="@+id/toobar"
+        layout="@layout/tb_main"
+        />
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="1000dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/linearLayout">
+
+    </LinearLayout>
+
+    <Button
+        android:text="Shoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnShoe"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@drawable/sheo"
+        android:drawableRight="@drawable/sheo"
+        android:background="@drawable/btn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/fronts"
+        android:id="@+id/imageView"
+        android:layout_marginBottom="95dp"
+        android:layout_above="@+id/btnMakeup"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="fabric"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnFabric"
+        android:drawableRight="@drawable/d"
+        android:drawableLeft="@drawable/d"
+        android:background="@drawable/btn"
+        android:textColor="@android:color/white"
+        android:onClick="fabric"
+        android:layout_above="@+id/btnShoe"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="26dp" />
+
+    <Button
+        android:text="Make Up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnMakeup"
+        android:textColor="@android:color/white"
+        android:drawableRight="@drawable/hhh"
+        android:drawableLeft="@drawable/hhh"
+        android:background="@drawable/btn"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/btnFabric"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
